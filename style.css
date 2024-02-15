@@ -1,0 +1,71 @@
+.slider .carousel-item {
+  height: 100vh; /* Full height */
+  width: 100%; /* Full width */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+}
+
+/* Ensure the images are responsive */
+.slider .carousel-item {
+  width: 100%;
+  height: auto;
+  background-image: url(img/slider_1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: blur(0.5px);
+  object-fit: cover; /* Cover the area without stretching the image */
+}
+
+.slider .carousel-caption h5 p {
+  bottom: 10%;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .slider .carousel-item {
+    height: 50vh; /* Smaller height on smaller screens */
+  }
+  .slider .carousel-item h5 {
+    font-size: 30px;
+    margin-top: 1000px;
+  }
+  .slider .carousel-item p {
+    font-size: 16px;
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider .carousel-item {
+    height: 30vh; /* Even smaller height on very small screens */
+  }
+  .slider .carousel-item h5 {
+    font-size: 20px;
+  }
+  .slider .carousel-item p {
+    font-size: 14px;
+    display: none;
+  }
+}
+
+/* card-section */
+
+.card {
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Media queries for different screen sizes */
